@@ -19,6 +19,7 @@ import org.bukkit.event.player.PlayerDropItemEvent;
 import org.bukkit.event.player.PlayerInteractAtEntityEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.event.player.PlayerPickupItemEvent;
+import org.bukkit.event.player.PlayerQuitEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.projectiles.ProjectileSource;
@@ -30,6 +31,14 @@ import org.mswsplex.staff.utils.Utils;
 public class Events implements Listener {
 	public Events() {
 		Bukkit.getPluginManager().registerEvents(this, Main.plugin);
+	}
+	
+	@EventHandler
+	public void onLeave(PlayerQuitEvent event) {
+		Player player = event.getPlayer();
+		if (PlayerManager.getStaffMode(player)) {
+			PlayerManager.disableStaffMode(player);
+		}
 	}
 
 	@EventHandler
