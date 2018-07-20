@@ -1,0 +1,7 @@
+name: StaffMode
+main: org.mswsplex.staff.msws.Main
+version: 1.0
+description: Cool Staff Mode
+commands:
+   staff:
+      usage: /<command>

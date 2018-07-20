@@ -1,0 +1,7 @@
+NoPermission: '%prefix% You do not have permission to do this.'
+Enabled: '&aenabled&7'
+Disabled: '&cdisabled&7'
+Staff:
+  Toggle: '%prefix% You %status% staff mode.'
+  Reload: '%prefix% The server is reloading, your staff mode has been %status%.'
+  Action: '%prefix% You cannot do that in staff mode.'

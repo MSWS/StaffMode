@@ -1,0 +1,51 @@
+Prefix: '&9StaffMode>&7'
+StaffGUI:
+  Title: 'Online Staff Members'
+  Name: '&e&l%name%'
+  Lore:
+  - '&aOnline For: &e%time%'
+  - '&aWorld: &e%world%'
+  - '&aIn Staff Mode: %staff%'
+BackItem:
+  Icon: 'ARROW'
+  Name: '&cGo Back'
+NextItem:
+  Icon: 'ARROW'
+  Name: '&aGo Forward'
+Items:
+  Compass:
+    Icon: 'COMPASS'
+    HotBar: 0
+    Name: '&a&lJump To'
+    Lore:
+    - '&7Right click with this compass'
+    - '&7in your hand to teleport to where'
+    - '&7you''re looking.'
+  Book:
+    Icon: 'BOOK'
+    HotBar: 1
+    Name: '&e&lInspect Inventory'
+    Lore:
+    - '&7Right click a player with this'
+    - '&7book to view a player''s inventory'
+  Head:
+    Icon: 'SKULL_ITEM'
+    HotBar: 4
+    Name: '&c&lOnline Staff'
+    Lore:
+    - '&7Right click to view all online'
+    - '&7staff members.'
+  WorldEdit:
+    Icon: 'WOOD_AXE'
+    HotBar: 6
+    Name: '&d&lWorldEdit Wand'
+    Permission: 'staffmode.worldeditwand'
+  Dye:
+    Icon: 'INK_SACK'
+    Name: '&aVanish Enabled'
+    HotBar: 7
+    Data: 10
+  Button:
+    Icon: 'STONE_BUTTON'
+    Name: ''
+    HotBar: 8
